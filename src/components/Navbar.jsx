@@ -18,7 +18,7 @@ const Navbar = () => {
             <Box sx={{width:'50%', color:'textColor.main' }} >
                 <Typography variant="body1" fontSize='1.3rem' >AI Cart</Typography>
             </Box>
-            <Box sx={{width:{lg:'50%', xs:'100%'}, display:'flex', position:{lg:"relative", xs:"fixed"}, height:{lg:'100%',  xs:'100vh'},top:"0px", left:{lg:'100%', xs:toggleNavbar ? '0%': '100%'}, transition:'all 0.1s linear', zIndex:1000,}} >
+            <Box sx={{width:{lg:'50%', xs:'100%'}, display:'flex', position:{lg:"relative", xs:"fixed"}, height:{lg:'100%',  xs:'100vh'},top:"0px", left:{lg:'0%', xs:toggleNavbar ? '0%': '100%'}, transition:'all 0.1s linear', zIndex:1000,}} >
                 <Box onClick={CloseNavbar} sx={{display:{lg:'none', xs:'block'}, height:'100vh', width:'20%', backgroundColor:'rgba(0,0,0,0.3)'  }} ></Box>
                 <Box sx={{width:{lg:'100%', xs:"80%"}, bgcolor:'primary.navbar',  display:'flex', flexDirection:{lg:'row', xs:'column'}, color:'textColor.main',   justifyContent:{lg:'end', xs:'flex-start'},  p:{lg:0, xs:3}, alignItems:{lg:'center', xs:'start'}}} >
                     <Box sx={{mr:5, cursor:'pointer', py:{lg:0, xs:1} }} > <Typography variant="body1" fontSize={{lg:'1rem', xs:'1.3rem'}} >Latest tools</Typography> </Box>
